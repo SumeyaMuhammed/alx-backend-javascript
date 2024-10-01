@@ -1,12 +1,9 @@
-const engineering = createEmployeesObject("engineering", [
-  "John Doe",
-  "Guillaume Salva",
-]);
-const sales = createEmployeesObject("sales", ["Alice", "Bob"]);
-const report = createReportObject({ ...engineering, ...sales });
-
-const employeeIterator = createIteratorObject(report);
-
-for (const employee of employeeIterator) {
-  console.log(employee);
+export default function createIteratorObject(report) {
+  return (function* _() {
+    for (const department of Object.values(report.allEmployees)) {
+      for (const employee of department) {
+        yield employee;
+      }
+    }
+  })();
 }
