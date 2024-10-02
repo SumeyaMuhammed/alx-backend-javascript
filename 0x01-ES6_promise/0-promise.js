@@ -3,9 +3,9 @@ export default function getResponseFromAPI() {
     const success = true;
 
     if (success) {
-      resolve("Response from API");
+      resolve('Response from API');
     } else {
-      reject(new Error("Error: Unable to get response from API"));
+      reject(new Error('Error: Unable to get response from API'));
     }
   });
 }
