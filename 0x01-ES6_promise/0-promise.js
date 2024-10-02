@@ -4,9 +4,9 @@ function getResponseFromAPI() {
     setTimeout(() => {
       const success = true; // Simulate success condition
       if (success) {
-        resolve("Response from API");
+        resolve('Response from API');
       } else {
-        reject("Error: Failed to fetch data from API");
+        reject('Error: Failed to fetch data from API');
       }
     }, 1000); // Delay of 1 second
   });
