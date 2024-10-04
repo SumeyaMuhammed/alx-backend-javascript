@@ -20,7 +20,7 @@ module.exports = {
     "no-console": "off",
     "no-shadow": "off",
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
-    quotes: ["error", "single"],
+    "quotes": ["error", "single"],
   },
   overrides: [
     {
