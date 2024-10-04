@@ -30,7 +30,6 @@ class HolbertonCourse {
   get students() {
     return this._students;
   }
-  export default HolbertonCourse;
 
   set students(students) {
     if (!(students instanceof Array)) {
@@ -39,3 +38,4 @@ class HolbertonCourse {
     this._students = students;
   }
 }
+  export default HolbertonCourse;
