@@ -6,7 +6,7 @@ export function queryAPI(endpoint) {
   }
 
   if (!weakMap.has(endpoint)) {
-    weakMap.set(endpoint, 0); t
+    weakMap.set(endpoint, 0); 
   }
 
   const count = weakMap.get(endpoint) + 1;
